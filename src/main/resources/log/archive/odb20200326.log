@@ -1,0 +1,213 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2020-03-26 12:18:37 #1 store] 
+Database 'C:\Users\Iker\Desktop\Iker\Uni\2.maila\SI\Proiektua\bets2020\src\main\resources\bets.temp' is opened by 636@MSI
+
+[2020-03-26 12:18:37 #2 type] 
+Type domain.Erabiltzaile is not enhanced.
+
+[2020-03-26 12:18:37 #3 type] 
+Type domain.Admin is not enhanced.
+
+[2020-03-26 12:18:37 #4 type] 
+Type domain.Bezero is not enhanced.
+
+[2020-03-26 12:18:37 #5 type] 
+Type domain.Question is not enhanced.
+
+[2020-03-26 12:18:37 #6 type.registry] 
+New type domain.Kuota
+
+[2020-03-26 12:18:37 #7 type.registry] 
+New type java.util.Vector<domain.Kuota>
+
+[2020-03-26 12:18:37 #8 type] 
+Type domain.Event is not enhanced.
+
+[2020-03-26 12:18:37 #9 type] 
+Type domain.Kuota is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2020-03-26 12:25:32 #1 store] 
+Database 'C:\Users\Iker\Desktop\Iker\Uni\2.maila\SI\Proiektua\bets2020\src\main\resources\bets.temp' is opened by 8084@MSI
+
+[2020-03-26 12:25:32 #2 type] 
+Type domain.Erabiltzaile is not enhanced.
+
+[2020-03-26 12:25:32 #3 type] 
+Type domain.Admin is not enhanced.
+
+[2020-03-26 12:25:32 #4 type] 
+Type domain.Bezero is not enhanced.
+
+[2020-03-26 12:25:32 #5 type] 
+Type domain.Question is not enhanced.
+
+[2020-03-26 12:25:32 #6 type] 
+Type domain.Event is not enhanced.
+
+[2020-03-26 12:25:32 #7 type] 
+Type domain.Kuota is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2020-03-26 17:35:22 #1 store] 
+Database 'C:\Users\Iker\Desktop\Iker\Uni\2.maila\SI\Proiektua\bets2020\src\main\resources\bets.temp' is opened by 12652@MSI
+
+[2020-03-26 17:35:22 #2 type] 
+Type domain.Erabiltzaile is not enhanced.
+
+[2020-03-26 17:35:22 #3 type] 
+Type domain.Admin is not enhanced.
+
+[2020-03-26 17:35:22 #4 type] 
+Type domain.Bezero is not enhanced.
+
+[2020-03-26 17:35:22 #5 type] 
+Type domain.Question is not enhanced.
+
+[2020-03-26 17:35:22 #6 type] 
+Type domain.Event is not enhanced.
+
+[2020-03-26 17:35:22 #7 type] 
+Type domain.Kuota is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2020-03-26 17:36:28 #1 store] 
+Database 'C:\Users\Iker\Desktop\Iker\Uni\2.maila\SI\Proiektua\bets2020\src\main\resources\bets.temp' is opened by 14952@MSI
+
+[2020-03-26 17:36:28 #2 type] 
+Type domain.Erabiltzaile is not enhanced.
+
+[2020-03-26 17:36:28 #3 type] 
+Type domain.Admin is not enhanced.
+
+[2020-03-26 17:36:28 #4 type] 
+Type domain.Bezero is not enhanced.
+
+[2020-03-26 17:36:28 #5 type] 
+Type domain.Question is not enhanced.
+
+[2020-03-26 17:36:28 #6 type] 
+Type domain.Event is not enhanced.
+
+[2020-03-26 17:36:28 #7 type] 
+Type domain.Kuota is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2020-03-26 17:58:33 #1 store] 
+Database 'C:\Users\Iker\Desktop\Iker\Uni\2.maila\SI\Proiektua\bets2020\src\main\resources\bets.temp' is opened by 15460@MSI
+
+[2020-03-26 17:58:34 #2 type] 
+Type domain.Erabiltzaile is not enhanced.
+
+[2020-03-26 17:58:34 #3 type] 
+Type domain.Admin is not enhanced.
+
+[2020-03-26 17:58:34 #4 type] 
+Type domain.Bezero is not enhanced.
+
+[2020-03-26 17:58:34 #5 type] 
+Type domain.Question is not enhanced.
+
+[2020-03-26 17:58:34 #6 type] 
+Type domain.Event is not enhanced.
+
+[2020-03-26 17:58:34 #7 type] 
+Type domain.Kuota is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2020-03-26 18:00:48 #1 store] 
+Database 'C:\Users\Iker\Desktop\Iker\Uni\2.maila\SI\Proiektua\bets2020\src\main\resources\bets.temp' is opened by 4336@MSI
+
+[2020-03-26 18:00:49 #2 type] 
+Type domain.Erabiltzaile is not enhanced.
+
+[2020-03-26 18:00:49 #3 type] 
+Type domain.Admin is not enhanced.
+
+[2020-03-26 18:00:49 #4 type] 
+Type domain.Bezero is not enhanced.
+
+[2020-03-26 18:00:49 #5 type] 
+Type domain.Question is not enhanced.
+
+[2020-03-26 18:00:49 #6 type] 
+Type domain.Event is not enhanced.
+
+[2020-03-26 18:00:49 #7 type] 
+Type domain.Kuota is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2020-03-26 18:03:11 #1 store] 
+Database 'C:\Users\Iker\Desktop\Iker\Uni\2.maila\SI\Proiektua\bets2020\src\main\resources\bets.temp' is opened by 2428@MSI
+
+[2020-03-26 18:03:11 #2 type] 
+Type domain.Erabiltzaile is not enhanced.
+
+[2020-03-26 18:03:11 #3 type] 
+Type domain.Admin is not enhanced.
+
+[2020-03-26 18:03:11 #4 type] 
+Type domain.Bezero is not enhanced.
+
+[2020-03-26 18:03:11 #5 type] 
+Type domain.Question is not enhanced.
+
+[2020-03-26 18:03:11 #6 type] 
+Type domain.Event is not enhanced.
+
+[2020-03-26 18:03:11 #7 type] 
+Type domain.Kuota is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2020-03-26 18:09:25 #1 store] 
+Database 'C:\Users\Iker\Desktop\Iker\Uni\2.maila\SI\Proiektua\bets2020\src\main\resources\bets.temp' is opened by 6924@MSI
+
+[2020-03-26 18:09:25 #2 type] 
+Type domain.Erabiltzaile is not enhanced.
+
+[2020-03-26 18:09:25 #3 type] 
+Type domain.Admin is not enhanced.
+
+[2020-03-26 18:09:25 #4 type] 
+Type domain.Bezero is not enhanced.
+
+[2020-03-26 18:09:25 #5 type] 
+Type domain.Question is not enhanced.
+
+[2020-03-26 18:09:25 #6 type] 
+Type domain.Event is not enhanced.
+
+[2020-03-26 18:09:25 #7 type] 
+Type domain.Kuota is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2020-03-26 18:13:04 #1 store] 
+Database 'C:\Users\Iker\Desktop\Iker\Uni\2.maila\SI\Proiektua\bets2020\src\main\resources\bets.temp' is opened by 2924@MSI
+
+[2020-03-26 18:13:04 #2 type] 
+Type domain.Erabiltzaile is not enhanced.
+
+[2020-03-26 18:13:04 #3 type] 
+Type domain.Admin is not enhanced.
+
+[2020-03-26 18:13:04 #4 type] 
+Type domain.Bezero is not enhanced.
+
+[2020-03-26 18:13:04 #5 type] 
+Type domain.Question is not enhanced.
+
+[2020-03-26 18:13:04 #6 type] 
+Type domain.Event is not enhanced.
+
+[2020-03-26 18:13:04 #7 type] 
+Type domain.Kuota is not enhanced.
+

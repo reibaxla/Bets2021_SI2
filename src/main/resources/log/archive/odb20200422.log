@@ -1,0 +1,26 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2020-04-22 19:46:12 #1 store] 
+Database 'C:\Users\Iker\Desktop\Iker\Uni\2.maila\SI\Proiektua\bets2020\src\main\resources\bets.temp' is opened by 10876@MSI
+
+[2020-04-22 19:46:12 #2 type] 
+Type domain.Erabiltzaile is not enhanced.
+
+[2020-04-22 19:46:12 #3 type] 
+Type domain.Admin is not enhanced.
+
+[2020-04-22 19:46:12 #4 type] 
+Type domain.Bezero is not enhanced.
+
+[2020-04-22 19:46:12 #5 type] 
+Type domain.Question is not enhanced.
+
+[2020-04-22 19:46:12 #6 type] 
+Type domain.Event is not enhanced.
+
+[2020-04-22 19:46:12 #7 type] 
+Type domain.Kuota is not enhanced.
+
+[2020-04-22 19:46:12 #8 type] 
+Type domain.Mugimendu is not enhanced.
+
