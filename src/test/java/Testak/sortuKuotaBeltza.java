@@ -22,7 +22,7 @@ public class sortuKuotaBeltza {
 	static TestFacadeImplementation testBL = new TestFacadeImplementation();
 
 	private Event ev;
-	
+
 	@Test
 	public void test1() {
 		try {
@@ -241,5 +241,5 @@ public class sortuKuotaBeltza {
 			boolean b = testBL.removeEvent(ev);
 			System.out.println("Finally " + b);
 		}
-
+	}
 }
