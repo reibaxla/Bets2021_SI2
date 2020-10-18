@@ -35,7 +35,7 @@ public class sortuKuotaTxuria {
 	@Test
 	public void test1() { // IF1 TRUE
 		try {
-			// define paramaters
+
 			String queryText = "proba galdera";
 			Float betMinimum = new Float(2);
 			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
@@ -48,18 +48,14 @@ public class sortuKuotaTxuria {
 			ev = testBL.addEvent(queryText, oneDate);
 			Question q = sut.createQuestion(ev, queryText, betMinimum);
 
-			// invoke System Under Test (sut)
+			sut.sortuKuota(q, queryText, 1.0); //Bi aldiz jartzen dut Erroreak salto egiteko.
 			sut.sortuKuota(q, queryText, 1.0);
-			sut.sortuKuota(q, queryText, 1.0);
-			// if the program continues fail
+			
 			fail();
 		} catch (Exception e) {
-			// if the program goes to this point OK
 			assertTrue(true);
 		} finally {
-			// Remove the created objects in the database (cascade removing)
-			boolean b = testBL.removeEvent(ev);
-			System.out.println("Finally " + b);
+			testBL.removeEvent(ev);
 		}
 	}
 
@@ -68,7 +64,6 @@ public class sortuKuotaTxuria {
 	@Test
 	public void test2() {// IF1 FALSE
 		try {
-			// define paramaters
 			String queryText = "proba galdera";
 			Float betMinimum = new Float(2);
 			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
@@ -81,18 +76,14 @@ public class sortuKuotaTxuria {
 			ev = testBL.addEvent(queryText, oneDate);
 			Question q = sut.createQuestion(ev, queryText, betMinimum);
 
-			// invoke System Under Test (sut)
 			sut.sortuKuota(q, queryText, 1.0);
-
-			// if the program continues fail
-			fail();
-		} catch (Exception e) {
-			// if the program goes to this point OK
+			
 			assertTrue(true);
+			
+		} catch (Exception e) {
+			fail(); //Programa ona iristen bada esan nahi du Queryren bat errepikatua dagoela, beraz, gaizki egongo litzateke.
 		} finally {
-			// Remove the created objects in the database (cascade removing)
-			boolean b = testBL.removeEvent(ev);
-			System.out.println("Finally " + b);
+			testBL.removeEvent(ev);
 		}
 	}
 }

@@ -327,7 +327,7 @@ public class DataAccess  {
 		System.out.println(">> DataAccess: createKuota=> question= "+question+" dezkripzioa= "+deskripzioa+" pronostikoa="+pronostikoa);
 		
 		Question q = db.find(Question.class, question.getQuestionNumber());
-		if (q.DoesKuotaExists(deskripzioa)) throw new KuotaAlreadyExist("ErrorQueryAlreadyExist");
+		if (q.DoesKuotaExists(deskripzioa)) throw new KuotaAlreadyExist("ErrorQueryAlreadyExist!!");
 			db.getTransaction().begin();
 			Kuota k = q.addKuota(deskripzioa, pronostikoa);
 			db.getTransaction().commit();

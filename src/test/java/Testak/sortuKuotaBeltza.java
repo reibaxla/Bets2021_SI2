@@ -26,7 +26,7 @@ public class sortuKuotaBeltza {
 	@Test
 	public void test1() {
 		try {
-			// define paramaters
+
 			String queryText = "proba galdera";
 			Float betMinimum = new Float(2);
 			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
@@ -39,18 +39,14 @@ public class sortuKuotaBeltza {
 			ev = testBL.addEvent(queryText, oneDate);
 			Question q = sut.createQuestion(ev, queryText, betMinimum);
 
-			// invoke System Under Test (sut)
+			sut.sortuKuota(q, queryText, 1.0); //Bi aldiz jartzen dut Erroreak salto egiteko.
 			sut.sortuKuota(q, queryText, 1.0);
-
-			// if the program continues fail
+			
 			fail();
 		} catch (Exception e) {
-			// if the program goes to this point OK
 			assertTrue(true);
 		} finally {
-			// Remove the created objects in the database (cascade removing)
-			boolean b = testBL.removeEvent(ev);
-			System.out.println("Finally " + b);
+			testBL.removeEvent(ev);
 		}
 	}
 
