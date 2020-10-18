@@ -185,7 +185,7 @@ public class Question implements Serializable {
 	}
 
 	
-	public boolean DoesKuotaExists(String deskrip)  {	
+	public boolean DoesKuotaExists(String deskrip)  {
 		for (Kuota q:this.getKuota()){
 			if (q.getDeskripzioa().compareTo(deskrip)==0)
 				return true;

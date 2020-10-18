@@ -47,6 +47,7 @@ public class DataAccess  {
 
 	public DataAccess(boolean initializeMode)  {
 		
+		
 		c=ConfigXML.getInstance();
 		
 		System.out.println("Creating DataAccess instance => isDatabaseLocal: "+c.isDatabaseLocal()+" getDatabBaseOpenMode: "+c.getDataBaseOpenMode());
@@ -79,6 +80,7 @@ public class DataAccess  {
 	 * This method is invoked by the business logic (constructor of BLFacadeImplementation) when the option "initialize" is declared in the tag dataBaseOpenMode of resources/config.xml file
 	 */	
 	public void initializeDB(){
+
 		
 		db.getTransaction().begin();
 		try {
@@ -247,6 +249,7 @@ public class DataAccess  {
 	 	return res;
 	}
 	
+	
 	/**
 	 * This method retrieves from the database the dates a month for which there are events
 	 * 
@@ -324,9 +327,7 @@ public class DataAccess  {
 		System.out.println(">> DataAccess: createKuota=> question= "+question+" dezkripzioa= "+deskripzioa+" pronostikoa="+pronostikoa);
 		
 		Question q = db.find(Question.class, question.getQuestionNumber());
-				
 		if (q.DoesKuotaExists(deskripzioa)) throw new KuotaAlreadyExist("ErrorQueryAlreadyExist");
-				
 			db.getTransaction().begin();
 			Kuota k = q.addKuota(deskripzioa, pronostikoa);
 			db.getTransaction().commit();

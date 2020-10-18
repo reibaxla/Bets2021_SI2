@@ -99,7 +99,7 @@ public class Event implements Serializable {
         return q;
 	}
 
-	
+
 	/**
 	 * This method checks if the question already exists for that event
 	 * 
