@@ -32,6 +32,7 @@ public class index extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private final ButtonGroup buttonGroup = new ButtonGroup();
+	public Object jLabelSelectOption;
 
 	/**
 	 * Launch the application.
