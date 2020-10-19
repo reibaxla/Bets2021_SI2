@@ -4,13 +4,11 @@ import static org.junit.Assert.*;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 
 import org.junit.Test;
 
 import configuration.ConfigXML;
-import configuration.UtilDate;
 import dataAccess.DataAccess;
 import domain.Event;
 import domain.Question;
@@ -24,11 +22,11 @@ public class sortuKuotaBeltza {
 	private Event ev;
 
 	@Test
-	public void test1() {//BK egoki guztiak gordetzen dira, hau da, programa zuzen joan da.
+	public void test1() {//BK egoki guztiak gordetzen dira, hau da, programa zuzen joan da. Estalitakoak = (1,2,3,4)
 		try {
 
-			String queryText = "proba galdera";
-			Float betMinimum = new Float(2);
+			String galdera = "proba galdera";
+			Float apostua = new Float(2);
 			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 			Date oneDate = null;
 			try {
@@ -36,24 +34,25 @@ public class sortuKuotaBeltza {
 			} catch (ParseException e) {
 				e.printStackTrace();
 			}
-			ev = testBL.addEvent(queryText, oneDate);
-			Question q = sut.createQuestion(ev, queryText, betMinimum);
+			ev = testBL.addEvent(galdera, oneDate);
+			Question q = sut.createQuestion(ev, galdera, apostua);
 
-			sut.sortuKuota(q, queryText, 1.0);
+			sut.sortuKuota(q, galdera, 1.0);
 			
-			fail();
-		} catch (Exception e) {
 			assertTrue(true);
+		} catch (Exception e) {
+			fail();
 		} finally {
 			testBL.removeEvent(ev);
 		}
 	}
+	/*
 	@Test
-	public void test2() {//Kuotaren deskripzioa null.
+	public void test2() {//Kuotaren deskripzioa null. Estalitakoa = (5)
 		try {
 
-			String queryText = "proba galdera";
-			Float betMinimum = new Float(2);
+			String galdera = "proba galdera";
+			Float apostua = new Float(2);
 			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 			Date oneDate = null;
 			try {
@@ -61,8 +60,8 @@ public class sortuKuotaBeltza {
 			} catch (ParseException e) {
 				e.printStackTrace();
 			}
-			ev = testBL.addEvent(queryText, oneDate);
-			Question q = sut.createQuestion(ev, queryText, betMinimum);
+			ev = testBL.addEvent(galdera, oneDate);
+			Question q = sut.createQuestion(ev, galdera, apostua);
 
 			sut.sortuKuota(q, null, 1.0);
 			
@@ -73,12 +72,14 @@ public class sortuKuotaBeltza {
 			testBL.removeEvent(ev);
 		}
 	}
-
+*/
+	/*
 	@Test
-	public void test3() { //Question null.
+	public void test4() { //Deskripzioa = float, Estalitakoa = (6)
 		try {
 
-			String queryText = "proba galdera";
+			String galdera = "proba galdera";
+			Float apostua = new Float(2);
 			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 			Date oneDate = null;
 			try {
@@ -86,9 +87,32 @@ public class sortuKuotaBeltza {
 			} catch (ParseException e) {
 				e.printStackTrace();
 			}
-			ev = testBL.addEvent(queryText, oneDate);
+			ev = testBL.addEvent(galdera, oneDate);
+			sut.createQuestion(ev, float, apostua);
+	
+			fail();
+		} catch (Exception e) {
+			assertTrue(true);
+		} finally {
+			testBL.removeEvent(ev);
+		}
+	}
+	*/
+	@Test
+	public void test3() { //Question null. Estalitakoa = (8)
+		try {
 
-			sut.sortuKuota(null, queryText, 1.0);
+			String galdera = "proba galdera";
+			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+			Date oneDate = null;
+			try {
+				oneDate = sdf.parse("05/10/2022");
+			} catch (ParseException e) {
+				e.printStackTrace();
+			}
+			ev = testBL.addEvent(galdera, oneDate);
+
+			sut.sortuKuota(null, galdera, 1.0);
 			
 			fail();
 		} catch (Exception e) {
@@ -98,12 +122,14 @@ public class sortuKuotaBeltza {
 		}
 	}
 
+
+
 	@Test
-	public void test4() { 
+	public void test5() { // Kuota existitzen da estalitakoak = (9).
 		try {
 
-			String queryText = "proba galdera";
-			Float betMinimum = new Float(2);
+			String galdera = "proba galdera";
+			Float apostua = new Float(2);
 			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 			Date oneDate = null;
 			try {
@@ -111,35 +137,11 @@ public class sortuKuotaBeltza {
 			} catch (ParseException e) {
 				e.printStackTrace();
 			}
-			ev = testBL.addEvent(queryText, oneDate);
-			Question q = sut.createQuestion(ev, queryText, betMinimum);
-	
-			fail();
-		} catch (Exception e) {
-			assertTrue(true);
-		} finally {
-			testBL.removeEvent(ev);
-		}
-	}
+			ev = testBL.addEvent(galdera, oneDate);
+			Question q = sut.createQuestion(ev, galdera, apostua);
 
-	@Test
-	public void test5() { // Deskripzioa existitzen da.
-		try {
-
-			String queryText = "proba galdera";
-			Float betMinimum = new Float(2);
-			SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
-			Date oneDate = null;
-			try {
-				oneDate = sdf.parse("05/10/2022");
-			} catch (ParseException e) {
-				e.printStackTrace();
-			}
-			ev = testBL.addEvent(queryText, oneDate);
-			Question q = sut.createQuestion(ev, queryText, betMinimum);
-
-			sut.sortuKuota(q, queryText, 1.0); //Bi aldiz jartzen dut Erroreak salto egiteko.
-			sut.sortuKuota(q, queryText, 1.0);
+			sut.sortuKuota(q, galdera, 1.0); //Bi aldiz jartzen dut Erroreak salto egiteko.
+			sut.sortuKuota(q, galdera, 1.0);
 			
 			fail();
 		} catch (Exception e) {

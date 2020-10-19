@@ -70,7 +70,6 @@ try {
 				appFacadeInterface.initializeBD();
 				*/
 			MainGUI.setBussinessLogic(appFacadeInterface);
-
 		
 
 			

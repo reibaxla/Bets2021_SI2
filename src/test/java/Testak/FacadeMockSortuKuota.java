@@ -32,7 +32,7 @@ public class FacadeMockSortuKuota {
 	BLFacade sut = new BLFacadeImplementation();
 
 	@Test
-	public void test1() {// Dena zuzen joan da.
+	public void test1() {// Dena zuzen joan da. Estalitakoak = (1,2,3,4)
 		try {
 
 			String questionText = "proba galdera";
@@ -53,7 +53,7 @@ public class FacadeMockSortuKuota {
 	}
 	
 	@Test
-	public void test2() {// Throws Kuota alredy exists.
+	public void test2() {// Throws Kuota alredy exists, hau da, kuota existitzen da. estalitakoak =(9)
 		try {
 
 			String questionText = "proba galdera";
@@ -73,14 +73,13 @@ public class FacadeMockSortuKuota {
 	
 	
 	@Test
-	public void test3() {// Question null da.
+	public void test3() {// Question null da., estalitakoak = (8)
 		try {
 
 			String questionText = "proba galdera";
 			Float betMinimun = new Float(2);
 
-			Mockito.doReturn(new Exception()).when(dataAccess)
-					.sortuKuota(null, Mockito.any(String.class), Mockito.any(double.class));
+			Mockito.when(dataAccess.sortuKuota(null, Mockito.any(String.class), Mockito.any(double.class))).thenThrow(new Exception());
 
 			sut.createKuota(null, questionText, betMinimun);
 
@@ -91,16 +90,13 @@ public class FacadeMockSortuKuota {
 	}
 	
 	@Test
-	public void test4() {// xxxx null da.
+	public void test4() {// Deskripzioa null da, estalitakoak = (5)
 		try {
-
-			String questionText = "proba galdera";
 			Float betMinimun = new Float(2);
 
-			Mockito.doReturn(new Kuota(questionText, betMinimun, mockedQuestion)).when(dataAccess)
-					.sortuKuota(Mockito.any(Question.class), Mockito.any(String.class), Mockito.any(double.class));
+			Mockito.when(dataAccess.sortuKuota(null, Mockito.any(String.class), Mockito.any(double.class))).thenThrow(new Exception());
 
-			Kuota q = sut.createKuota(mockedQuestion, questionText, betMinimun);
+			sut.createKuota(mockedQuestion, null, betMinimun);
 
 			fail();
 		} catch (Exception e) {
